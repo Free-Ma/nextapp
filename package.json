@@ -1,0 +1,79 @@
+{
+    "name": "nextapp",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "------------------ app command": "----",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "------------------ lint command": "----",
+        "lint": "pnpm lint:es && pnpm lint:style",
+        "lint:es": "next lint --fix",
+        "lint:style": "stylelint \"**/*.css\" --fix --cache --cache-location node_modules/.cache/stylelint/",
+        "------------------ ui command": "----",
+        "addsc": "pnpm dlx shadcn-ui@latest add -c ./src/app"
+    },
+    "dependencies": {
+        "@radix-ui/react-icons": "^1.3.0",
+        "@radix-ui/react-slot": "^1.1.0",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "lodash": "^4.17.21",
+        "lucide-react": "^0.440.0",
+        "next": "14.2.10",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-icons": "^5.3.0",
+        "tailwind-merge": "^2.5.2",
+        "tailwindcss-animate": "^1.0.7"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.17.7",
+        "@types/node": "^22.5.4",
+        "@types/react": "^18.3.5",
+        "@types/react-dom": "^18.3.0",
+        "@typescript-eslint/eslint-plugin": "^8.5.0",
+        "@typescript-eslint/parser": "^8.5.0",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8.57.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^18.0.0",
+        "eslint-config-next": "14.2.10",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.30.0",
+        "eslint-plugin-jsx-a11y": "^6.10.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.36.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-unused-imports": "3.2.0",
+        "postcss": "^8.4.45",
+        "postcss-import": "^16.1.0",
+        "postcss-mixins": "^11.0.1",
+        "postcss-nested": "^6.2.0",
+        "postcss-nesting": "^13.0.0",
+        "prettier": "^3.3.3",
+        "stylelint": "^16.9.0",
+        "stylelint-config-css-modules": "^4.4.0",
+        "stylelint-config-recess-order": "^5.1.0",
+        "stylelint-config-standard": "^36.0.1",
+        "stylelint-prettier": "^5.0.2",
+        "tailwindcss": "^3.4.11",
+        "typescript": "^5.6.2"
+    },
+    "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
+    "pnpm": {
+        "updateConfig": {
+            "ignoreDependencies": [
+                "eslint",
+                "eslint-plugin-unused-imports"
+            ]
+        },
+        "peerDependencyRules": {
+            "allowAny": [
+                "eslint",
+                "@typescript-eslint/*"
+            ]
+        }
+    }
+}
